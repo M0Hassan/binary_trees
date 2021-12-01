@@ -11,14 +11,14 @@ return (NULL);
 if (node->parent)
 {
 if (node->parent->left && node->parent->right)
-	{
-	  if (node->n == node->parent->right->n)
-	    return (node->parent->left);
-	  else
-	    return (node->parent->right);
-	}
+{
+if (node->n == node->parent->right->n)
+return (node->parent->left);
 else
-	return (NULL);
+return (node->parent->right);
+}
+else
+return (NULL);
 }
 return (NULL);
 }
